@@ -1,0 +1,17 @@
+[gd_resource type="NoiseTexture3D" load_steps=3 format=3 uid="uid://cir22b6y8gaqe"]
+
+[sub_resource type="Gradient" id="Gradient_75fxc"]
+interpolation_mode = 1
+interpolation_color_space = 1
+offsets = PackedFloat32Array(0, 0.5)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+metadata/_snap_enabled = true
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_wox7s"]
+noise_type = 2
+seed = 3
+frequency = 0.0077
+
+[resource]
+color_ramp = SubResource("Gradient_75fxc")
+noise = SubResource("FastNoiseLite_wox7s")
